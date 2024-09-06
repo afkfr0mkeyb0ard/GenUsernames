@@ -33,7 +33,7 @@ arturo
 asuncion
 aurora
 beatriz
-begoÑa
+begona
 belen
 blanca
 borja
@@ -106,6 +106,7 @@ jaime
 javier
 jesus
 joan
+joanne
 joaquin
 joel
 jonathan
