@@ -1,11 +1,13 @@
 alonso
 alvarez
 blanco
+cano
 carrera
 castillo
 castro
 delgado
 diaz
+diez
 dominguez
 fernandez
 garcia
@@ -17,6 +19,7 @@ hernandez
 iglesias
 jimenez
 lopez
+lozano
 marin
 martin
 martinez
@@ -26,6 +29,7 @@ morales
 moreno
 munoz
 navarro
+nunez
 ortega
 ortiz
 perez
@@ -36,8 +40,10 @@ romero
 rubio
 ruiz
 sanchez
+santos
 sanz
 serrano
 suarez
 torres
 vazquez
+vidal
