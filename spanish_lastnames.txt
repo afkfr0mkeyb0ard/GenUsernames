@@ -33,6 +33,7 @@ nunez
 ortega
 ortiz
 perez
+pinta
 ramirez
 ramos
 rodriguez
