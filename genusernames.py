@@ -23,6 +23,12 @@ with open('spanish_lastnames.txt', 'r') as file:
 #form = 2: {f}{lastname}
 #form = 3: {firstname}.{lastname}
 #form = 4: {f}.{lastname}
+#form = 5: {lastname}{firstname}
+#form = 6: {l}{firstname}
+#form = 7: {lastname}.{firstname}
+#form = 8: {l}.{firstname}
+#form = 9: {firstname}
+#form = 10: {lastname}
 def format_user(firstname,lastname,form):
 	if form == 1:
 		result = firstname + lastname
@@ -35,6 +41,24 @@ def format_user(firstname,lastname,form):
 		return(result.lower())
 	elif form == 4:
 		result = firstname[0] + "." + lastname
+		return(result.lower())
+	elif form == 5:
+		result = lastname + firstname
+		return(result.lower())
+	elif form == 6:
+		result = lastname[0] + firstname
+		return(result.lower())
+	elif form == 7:
+		result = lastname + "." + firstname
+		return(result.lower())
+	elif form == 8:
+		result = lastname[0] + "." + firstname
+		return(result.lower())
+	elif form == 9:
+		result = firstname
+		return(result.lower())
+	elif form == 10:
+		result = lastname
 		return(result.lower())
 
 def get_usernames(lang="all",form=3):
