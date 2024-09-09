@@ -103,6 +103,7 @@ def get_usernames(lang="all",form=3):
 
 if '-h' in sys.argv :
 	print('Usage: python3 genusernames.py [-f1/f2/f3/f4] [-es/fr/en]')
+	print('-d        Add a domain to the usernames for email mode (ie: -d google.com')
 	print('-en       Use English dictionary only')
 	print('-fr       Use French dictionary only')
 	print('-es       Use Spanish dictionary only')
@@ -163,11 +164,24 @@ elif "-en" in sys.argv:
 else:
 	lang = "all"
 
-print("Using format" + str(form) + " and language " + lang)
-print("")
+DOMAIN = False
+if "-d" in sys.argv:
+	args = sys.argv
+	i = args.index("-d") + 1
+	domain = sys.argv[i]
+	DOMAIN = True
+	print("Using format" + str(form) + " and language " + lang + " and domain " + domain)
+	print("")
+else:
+	print("Using format" + str(form) + " and language " + lang)
+	print("")
 
 result = get_usernames(lang,form)
 result.sort()
 result = list(dict.fromkeys(result))
-for username in result:
-	print(username)
+if DOMAIN:
+	for username in result:
+		print(username + "@" + domain)
+else:
+	for username in result:
+		print(username)
