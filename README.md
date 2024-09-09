@@ -13,6 +13,16 @@ A Python script to generate usernames based on firstnames / lastnames
 - 2: `{f}{lastname}`
 - 3: `{firstname}.{lastname}` 
 - 4: `{f}.{lastname}`
+- 5: `{lastname}{firstname}`
+- 6: `{l}{firstname}`
+- 7: `{lastname}.{firstname}`
+- 8: `{l}.{firstname}`
+- 9: `{firstname}{l}`
+- 10: `{lastname}{f}`
+- 11: `{firstname}.{l}`
+- 12: `{lastname}.{f}`
+- 13: `{firstname}`
+- 14: `{lastname}`
 
 
 ## How to use
@@ -26,6 +36,16 @@ A Python script to generate usernames based on firstnames / lastnames
 -f2       Output format: {f}{lastname}
 -f3       Output format: {firstname}.{lastname}
 -f4       Output format: {f}.{lastname}
+-f5       Output format: {lastname}{firstname}`
+-f6       Output format: {l}{firstname}`
+-f7       Output format: {lastname}.{firstname}`
+-f8       Output format: {l}.{firstname}`
+-f9       Output format: {firstname}{l}`
+-f10      Output format: {lastname}{f}`
+-f11      Output format: {firstname}.{l}`
+-f12      Output format: {lastname}.{f}`
+-f13      Output format: {firstname}`
+-f14      Output format: {lastname}`
 -h        Display help
 ```
 ## Examples
