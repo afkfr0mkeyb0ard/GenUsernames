@@ -29,6 +29,7 @@ A Python script to generate usernames based on firstnames / lastnames
 `> python3 genusernames.py [-f1/f2/f3/f4] [-es/fr/en]`
 
 ```
+-d        Add a domain to the usernames for email mode (ie: -d google.com)
 -en       Use English dictionary only
 -fr       Use French dictionary only
 -es       Use Spanish dictionary only
@@ -54,8 +55,8 @@ A Python script to generate usernames based on firstnames / lastnames
 #Generate french usernames (format: antoine.dupont)
 > python3 genusernames.py -fr -f3
 
-#Generate french usernames (format: adupont)
-> python3 genusernames.py -fr -f2
+#Generate french usernames with emails (format: adupont@google.com)
+> python3 genusernames.py -fr -f2 -d google.com
 
 #Generate english usernames (format: c.collins)
 > python3 genusernames.py -en -f4
