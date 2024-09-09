@@ -24,9 +24,14 @@ A Python script to generate usernames based on firstnames / lastnames
 - 13: `{firstname}`
 - 14: `{lastname}`
 
+## Email mode
+
+Switch to email mode by adding a domain with `-d`.
+
+This will generate emails instead of simple usernames.
 
 ## How to use
-`> python3 genusernames.py [-f1/f2/f3/f4] [-es/fr/en]`
+`> python3 genusernames.py [-f1/f2/f3/f4] [-es/fr/en] [-d google.com]`
 
 ```
 -d        Add a domain to the usernames for email mode (ie: -d google.com)
