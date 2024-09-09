@@ -94,6 +94,12 @@ if '-h' in sys.argv :
 	print('-f2       Output format: {f}{lastname}')
 	print('-f3       Output format: {firstname}.{lastname}')
 	print('-f4       Output format: {f}.{lastname}')
+	print('-f5       Output format: {lastname}{firstname}')
+	print('-f6       Output format: {l}{firstname}')
+	print('-f7       Output format: {lastname}.{firstname}')
+	print('-f8       Output format: {l}.{firstname}')
+	print('-f9       Output format: {firstname}')
+	print('-f10      Output format: {lastname}')
 	print('-h        Display help')
 	sys.exit()
 
@@ -105,6 +111,18 @@ elif "-f3" in sys.argv:
 	form = 3
 elif "-f4" in sys.argv:
 	form = 4
+elif "-f5" in sys.argv:
+	form = 5
+elif "-f6" in sys.argv:
+	form = 6
+elif "-f7" in sys.argv:
+	form = 7
+elif "-f8" in sys.argv:
+	form = 8
+elif "-f9" in sys.argv:
+	form = 9
+elif "-f10" in sys.argv:
+	form = 10
 else:
 	form = 3
 
