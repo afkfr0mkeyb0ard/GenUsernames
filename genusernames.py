@@ -27,8 +27,12 @@ with open('spanish_lastnames.txt', 'r') as file:
 #form = 6: {l}{firstname}
 #form = 7: {lastname}.{firstname}
 #form = 8: {l}.{firstname}
-#form = 9: {firstname}
-#form = 10: {lastname}
+#form = 9: {firstname}{l}
+#form = 10: {lastname}{f}
+#form = 11: {firstname}.{l}
+#form = 12: {lastname}.{f}
+#form = 13: {firstname}
+#form = 14: {lastname}
 def format_user(firstname,lastname,form):
 	if form == 1:
 		result = firstname + lastname
@@ -55,9 +59,21 @@ def format_user(firstname,lastname,form):
 		result = lastname[0] + "." + firstname
 		return(result.lower())
 	elif form == 9:
-		result = firstname
+		result = firstname + lastname[0]
 		return(result.lower())
 	elif form == 10:
+		result = lastname + firstname[0]
+		return(result.lower())
+	elif form == 11:
+		result = firstname + "." + lastname[0]
+		return(result.lower())
+	elif form == 12:
+		result = lastname + "." + firstname[0]
+		return(result.lower())
+	elif form == 13:
+		result = firstname
+		return(result.lower())
+	elif form == 14:
 		result = lastname
 		return(result.lower())
 
@@ -98,8 +114,12 @@ if '-h' in sys.argv :
 	print('-f6       Output format: {l}{firstname}')
 	print('-f7       Output format: {lastname}.{firstname}')
 	print('-f8       Output format: {l}.{firstname}')
-	print('-f9       Output format: {firstname}')
-	print('-f10      Output format: {lastname}')
+	print('-f9       Output format: {firstname}{l}')
+	print('-f10      Output format: {lastname}{f}')
+	print('-f11      Output format: {firstname}.{l}')
+	print('-f12      Output format: {lastname}.{f}')
+	print('-f13      Output format: {firstname}')
+	print('-f14      Output format: {lastname}')
 	print('-h        Display help')
 	sys.exit()
 
@@ -123,6 +143,14 @@ elif "-f9" in sys.argv:
 	form = 9
 elif "-f10" in sys.argv:
 	form = 10
+elif "-f11" in sys.argv:
+	form = 11
+elif "-f12" in sys.argv:
+	form = 12
+elif "-f13" in sys.argv:
+	form = 13
+elif "-f14" in sys.argv:
+	form = 14
 else:
 	form = 3
 
