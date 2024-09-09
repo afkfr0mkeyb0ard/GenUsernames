@@ -102,7 +102,7 @@ def get_usernames(lang="all",form=3):
 	return result
 
 if '-h' in sys.argv :
-	print('Usage: python3 genusernames.py [-f1/f2/f3/f4] [-es/fr/en]')
+	print('Usage: python3 genusernames.py [-f1/f2/f3/f4] [-es/fr/en] [-d google.com]')
 	print('-d        Add a domain to the usernames for email mode (ie: -d google.com')
 	print('-en       Use English dictionary only')
 	print('-fr       Use French dictionary only')
