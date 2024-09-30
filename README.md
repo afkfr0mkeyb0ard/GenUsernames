@@ -42,16 +42,16 @@ This will generate emails instead of simple usernames.
 -f2       Output format: {f}{lastname}
 -f3       Output format: {firstname}.{lastname}
 -f4       Output format: {f}.{lastname}
--f5       Output format: {lastname}{firstname}`
--f6       Output format: {l}{firstname}`
--f7       Output format: {lastname}.{firstname}`
--f8       Output format: {l}.{firstname}`
--f9       Output format: {firstname}{l}`
--f10      Output format: {lastname}{f}`
--f11      Output format: {firstname}.{l}`
--f12      Output format: {lastname}.{f}`
--f13      Output format: {firstname}`
--f14      Output format: {lastname}`
+-f5       Output format: {lastname}{firstname}
+-f6       Output format: {l}{firstname}
+-f7       Output format: {lastname}.{firstname}
+-f8       Output format: {l}.{firstname}
+-f9       Output format: {firstname}{l}
+-f10      Output format: {lastname}{f}
+-f11      Output format: {firstname}.{l}
+-f12      Output format: {lastname}.{f}
+-f13      Output format: {firstname}
+-f14      Output format: {lastname}
 -h        Display help
 ```
 ## Examples
