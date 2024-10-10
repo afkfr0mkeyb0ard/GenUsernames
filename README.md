@@ -40,7 +40,7 @@ This will generate emails instead of simple usernames.
 -es       Use Spanish dictionary only
 -f1       Output format: {firstname}{lastname}
 -f2       Output format: {f}{lastname}
--f3       Output format: {firstname}.{lastname}
+-f3       Output format: {firstname}.{lastname} (default one)
 -f4       Output format: {f}.{lastname}
 -f5       Output format: {lastname}{firstname}
 -f6       Output format: {l}{firstname}
